@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="km" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PhoneZone Cambodia | ហាងលក់ទូរស័ព្ទដៃទំនើប និងគ្រឿងបន្លាស់សុទ្ធ 100%</title>
+  <meta name="description"
+    content="ហាងលក់ទូរស័ព្ទដៃស្មាតហ្វូនទំនើប iPhone, Samsung, Xiaomi, Foldable Phone តម្លៃពិសេស ធានាផ្លូវការ 1 ឆ្នាំ និងដឹកជញ្ជូនឥតគិតថ្លៃ 25 ខេត្ត/ក្រុង។">
+
+  <!-- Google Fonts: Kantumruy Pro (Khmer) & Plus Jakarta Sans (English/Numbers) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome Icons with Fallback -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar" id="announcementBar">
+    <div class="announcement-content">
+      <span class="badge-fire"><i class="fa-solid fa-fire"></i> ប្រូម៉ូសិនពិសេស</span>
+      <span data-i18n="announcementText">បញ្ចុះតម្លៃរហូតដល់ <strong>15%</strong> + ថែមស្រ្គីន & កាសឥតគិតថ្លៃ | ដឹកជញ្ជូនឥតគិតថ្លៃ 25
+        ខេត្ត/ក្រុង!</span>
+      <span class="promo-tag"><span data-i18n="promoCode">កូដបញ្ចុះតម្លៃ:</span> <code>PHONE10</code></span>
+    </div>
+    <button class="close-bar-btn" id="closeAnnouncement" onclick="dismissAnnouncement()" aria-label="បិទ"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="brand-logo" id="brandLogo">
+        <div class="logo-icon">
+          <i class="fa-solid fa-mobile-screen-button"></i>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Phone<span class="highlight">Zone</span></span>
+          <span class="brand-subtitle">ហាងទូរស័ព្ទដៃទំនើប</span>
+        </div>
+      </a>
+
+      <!-- Search Bar -->
+      <div class="search-wrapper">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input type="text" id="searchInput" data-i18n-placeholder="searchPlaceholder" placeholder="ស្វែងរកតាមឈ្មោះ, ម៉ាក (iPhone, Samsung...)..."
+          autocomplete="off">
+        <button class="clear-search-btn" id="clearSearch" style="display:none;"><i
+            class="fa-solid fa-circle-xmark"></i></button>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button class="theme-toggle-btn" id="themeToggle" data-i18n-title="uiTheme" title="ផ្លាស់ប្តូរពន្លឺ (Dark / Light)">
+          <i class="fa-solid fa-moon moon-icon"></i>
+          <i class="fa-solid fa-sun sun-icon"></i>
+        </button>
+
+        <button class="lang-toggle-btn" id="langToggle" type="button" aria-label="Switch language">EN</button>
+
+        <!-- Hotline Button -->
+        <a href="tel:012345678" class="contact-pill-btn" title="ទាក់ទងទូរស័ព្ទ">
+          <i class="fa-solid fa-phone-volume"></i>
+          <span class="nav-phone-num">012 345 678</span>
+        </a>
+
+        <!-- Cart Button -->
+        <button class="cart-btn" id="openCartBtn" title="កន្ត្រកទំនិញ">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-label" data-i18n="navCart">កន្ត្រក</span>
+          <span class="cart-badge" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Banner Section -->
+    <section class="hero-section">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-tag">
+            <span class="sparkle"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+            <span data-i18n="heroTag">ម៉ូដែលកំពូលប្រចាំឆ្នាំ 2024 - 2025</span>
+          </div>
+          <h1 class="hero-title">
+            <span data-i18n="heroTitleLine1">ស្មាតហ្វូនជំនាន់ថ្មី</span> <br>
+            <span class="gradient-text" data-i18n="heroTitleLine2">បច្ចេកវិទ្យាកំពូល & តម្លៃពិសេស</span>
+          </h1>
+          <p class="hero-desc" data-i18n="heroDesc">
+            ទទួលបានទូរស័ព្ទសុទ្ធ 100% ពីក្រុមហ៊ុនផ្លូវការ ជាមួយការធានាពេញ 1 ឆ្នាំ និងការបង់រំលស់ការប្រាក់ 0%
+            ដោយមិនចាំបាច់កក់ប្រាក់មុន។
+          </p>
+          <div class="hero-cta-group">
+            <a href="#catalogSection" class="btn btn-primary btn-glow">
+              <i class="fa-solid fa-cart-shopping"></i> <span data-i18n="heroBtnShop">មើលទំនិញទាំងអស់</span>
+            </a>
+            <button class="btn btn-secondary" onclick="openProductModal(1)">
+              <i class="fa-solid fa-bolt"></i> <span data-i18n="heroBtnHot">មើលម៉ូដែល Hot ផ្តាច់មុខ</span>
+            </button>
+          </div>
+          <!-- Hero Trust Metrics -->
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <span class="metric-val">100%</span>
+              <span class="metric-label">ទំនិញសុទ្ធផ្លូវការ</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-val">1 ឆ្នាំ</span>
+              <span class="metric-label">ធានាជួសជុលផ្លូវការ</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-val">25</span>
+              <span class="metric-label">ដឹកជញ្ជូនទូទាំងខេត្ត/ក្រុង</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-image-card">
+            <img src="images/hero.jpg" alt="ស្មាតហ្វូនកំពូល PhoneZone" class="hero-img">
+            <div class="floating-badge badge-top">
+              <span class="icon-pulse"><i class="fa-solid fa-shield-halved"></i></span>
+              <div>
+                <strong data-i18n="badgeWarrantyTitle">ធានាគុណភាព</strong>
+                <small data-i18n="badgeWarrantySub">Official Warranty</small>
+              </div>
+            </div>
+            <div class="floating-badge badge-bottom">
+              <span class="icon-tag"><i class="fa-solid fa-truck-fast"></i></span>
+              <div>
+                <strong data-i18n="badgeDeliveryTitle">ដឹកជញ្ជូនរហ័ស</strong>
+                <small data-i18n="badgeDeliverySub">Free Delivery</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Store Features Ribbon -->
+    <section class="features-ribbon">
+      <div class="features-container">
+        <div class="feature-box">
+          <div class="feature-icon"><i class="fa-solid fa-truck-fast"></i></div>
+          <div class="feature-info">
+            <h4>ដឹកជញ្ជូនរហ័សទូទាំងប្រទេស</h4>
+            <p>ឥតគិតថ្លៃដឹកជញ្ជូនសម្រាប់គ្រប់ការកុម្ម៉ង់</p>
+          </div>
+        </div>
+        <div class="feature-box">
+          <div class="feature-icon"><i class="fa-solid fa-shield-heart"></i></div>
+          <div class="feature-info">
+            <h4>ធានាផ្លូវការ 1 ឆ្នាំពេញ</h4>
+            <p>ជួសជុល និងប្តូរគ្រឿងបន្លាស់សុទ្ធ 100%</p>
+          </div>
+        </div>
+        <div class="feature-box">
+          <div class="feature-icon"><i class="fa-solid fa-qrcode"></i></div>
+          <div class="feature-info">
+            <h4>ទូទាត់រហ័សតាម KHQR</h4>
+            <p>គាំទ្រ ABA, ACLEDA, Wing, KHQR ងាយស្រួល</p>
+          </div>
+        </div>
+        <div class="feature-box">
+          <div class="feature-icon"><i class="fa-solid fa-rotate-left"></i></div>
+          <div class="feature-info">
+            <h4>ប្តូរថ្មីក្នុងរយៈពេល 7 ថ្ងៃ</h4>
+            <p>ប្តូរជូនភ្លាមៗប្រសិនបើមានបញ្ហាបច្ចេកទេស</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Catalog Section -->
+    <section class="catalog-section" id="catalogSection">
+      <div class="catalog-header">
+        <div class="section-badge"><i class="fa-solid fa-layer-group"></i> បញ្ជីផលិតផល</div>
+        <h2 class="section-title" data-i18n="sectionTitle">ស្មាតហ្វូន & គ្រឿងបន្លាស់ពេញនិយម</h2>
+        <p class="section-desc">ជ្រើសរើសទូរស័ព្ទដែលស័ក្តិសមបំផុតសម្រាប់អ្នក ជាមួយតម្លៃសមរម្យ និងកាដូបន្ថែមជាច្រើន</p>
+      </div>
+
+      <!-- Filter Bar -->
+      <div class="filter-bar">
+        <div class="filter-categories-container" id="filterCategoriesContainer">
+          <button type="button" class="cat-nav-btn cat-nav-left" id="catNavLeft" aria-label="Previous categories" title="មើលទៅឆ្វេង">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+
+          <div class="filter-categories" id="filterCategories">
+            <button type="button" class="filter-pill active" data-category="all" onclick="filterByCategory('all')">
+              <i class="fa-solid fa-border-all"></i> <span data-i18n="allProducts">ទាំងអស់</span> (<span id="countAll">0</span>)
+            </button>
+            <button type="button" class="filter-pill" data-category="apple" onclick="filterByCategory('apple')">
+              <i class="fa-brands fa-apple"></i> <span data-i18n="filterApple">Apple iPhone</span>
+            </button>
+            <button type="button" class="filter-pill" data-category="samsung" onclick="filterByCategory('samsung')">
+              <i class="fa-solid fa-microchip"></i> <span data-i18n="filterSamsung">Samsung Galaxy</span>
+            </button>
+            <button type="button" class="filter-pill" data-category="xiaomi" onclick="filterByCategory('xiaomi')">
+              <i class="fa-solid fa-camera"></i> <span data-i18n="filterXiaomi">Xiaomi Flagship</span>
+            </button>
+            <button type="button" class="filter-pill" data-category="foldable" onclick="filterByCategory('foldable')">
+              <i class="fa-solid fa-book-open"></i> <span data-i18n="filterFoldable">Foldable Series</span>
+            </button>
+            <button type="button" class="filter-pill" data-category="accessories" onclick="filterByCategory('accessories')">
+              <i class="fa-solid fa-headphones"></i> <span data-i18n="filterAccessories">គ្រឿងបន្លាស់</span>
+            </button>
+          </div>
+
+          <button type="button" class="cat-nav-btn cat-nav-right" id="catNavRight" aria-label="Next categories" title="មើលទៅស្តាំ">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+
+        <div class="filter-controls">
+          <div class="sort-select-wrapper">
+            <label for="sortSelect"><i class="fa-solid fa-arrow-down-short-wide"></i> <span data-i18n="sortLabel">តម្រៀប:</span></label>
+            <select id="sortSelect" class="sort-select">
+              <option value="popular" data-i18n-option="sortPopular">ពេញនិយមបំផុត</option>
+              <option value="price-asc" data-i18n-option="sortPriceAsc">តម្លៃ: ទាប ទៅ ខ្ពស់</option>
+              <option value="price-desc" data-i18n-option="sortPriceDesc">តម្លៃ: ខ្ពស់ ទៅ ទាប</option>
+              <option value="discount" data-i18n-option="sortDiscount">បញ្ចុះតម្លៃច្រើនជាងគេ</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-grid" id="productsGrid">
+        <!-- Products will be generated dynamically by JavaScript -->
+      </div>
+
+      <!-- Empty State for Search / Filter -->
+      <div class="empty-state" id="emptyState" style="display: none;">
+        <div class="empty-icon"><i class="fa-solid fa-box-open"></i></div>
+        <h3>រកមិនឃើញទូរស័ព្ទដែលអ្នកស្វែងរកទេ!</h3>
+        <p>សូមសាកល្បងវាយឈ្មោះ ឬជ្រើសរើសប្រភេទផ្សេងទៀត។</p>
+        <button class="btn btn-secondary" id="resetFilterBtn">ត្រឡប់ទៅមើលទាំងអស់</button>
+      </div>
+    </section>
+
+    <!-- Why Choose Us / Guarantee Section -->
+    <section class="why-us-section">
+      <div class="why-us-container">
+        <div class="why-us-text">
+          <span class="section-badge">
+            <svg class="star-icon star-full" viewBox="0 0 24 24" width="14" height="14" fill="#f59e0b"
+              style="display:inline-block;vertical-align:-1px;">
+              <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+            </svg>
+            សេវាកម្មឈានមុខគេ
+          </span>
+          <h2>ហេតុអ្វីជ្រើសរើសទិញពី PhoneZone?</h2>
+          <p>យើងខ្ញុំផ្តល់នូវបទពិសោធន៍ទិញទំនិញដែលទំនើបបំផុត សុវត្ថិភាព និងទំនុកចិត្តខ្ពស់បំផុតក្នុងប្រទេសកម្ពុជា។</p>
+
+          <div class="benefit-list">
+            <div class="benefit-item">
+              <div class="benefit-check"><i class="fa-solid fa-circle-check"></i></div>
+              <div>
+                <h5>ទំនិញថ្មីប្រអប់មិនទាន់ bóc 100%</h5>
+                <p>មានតែទំនិញសុទ្ធពិតប្រាកដ មានលេខ IMEI ពិនិត្យបានត្រឹមត្រូវ។</p>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-check"><i class="fa-solid fa-circle-check"></i></div>
+              <div>
+                <h5>ថែមជូនកញ្ចប់កាដូដ៏ច្រើន</h5>
+                <p>ស្រ្គីនការពារ Privacy, ស្រោម Case ការពារជ្រុះ, ដុំសាកល្បឿនលឿន Fast Charge។</p>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-check"><i class="fa-solid fa-circle-check"></i></div>
+              <div>
+                <h5>បង់រំលស់ងាយស្រួល ២៥ ខេត្តក្រុង</h5>
+                <p>ប្រើតែអត្តសញ្ញាណប័ណ្ណ ១ សន្លឹក អនុម័តឆាប់រហ័សក្នុងរយៈពេល ១៥ នាទី។</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-support-banner">
+            <div class="support-avatar"><i class="fa-solid fa-headset"></i></div>
+            <div>
+              <strong>ត្រូវការការពិគ្រោះយោបល់បន្ថែម?</strong>
+              <p>ទាក់ទងមកកាន់អ្នកជំនាញរបស់យើងតាម Telegram គ្រប់ពេល!</p>
+            </div>
+            <a href="https://t.me/" target="_blank" class="btn btn-primary btn-sm">
+              <i class="fa-brands fa-telegram"></i> ឆាតឥឡូវនេះ
+            </a>
+          </div>
+        </div>
+
+        <div class="installment-card-visual">
+          <div class="installment-card">
+            <div class="install-card-header">
+              <span class="bank-tag"><i class="fa-solid fa-credit-card"></i> បង់រំលស់ការប្រាក់ 0%</span>
+              <span class="zero-rate">0% Interest</span>
+            </div>
+            <h3>គម្រោងបង់រំលស់ប្រចាំខែ</h3>
+            <p>ទិញទូរស័ព្ទក្នុងក្តីស្រមៃបានភ្លាមៗ ដោយមិនបាច់ចំណាយប្រាក់ដុំ</p>
+            <div class="calc-box">
+              <div class="calc-row">
+                <span>តម្លៃទូរស័ព្ទគំរូ:</span>
+                <strong>$1,199</strong>
+              </div>
+              <div class="calc-row">
+                <span>រយៈពេលបង់រំលស់:</span>
+                <strong>12 ខែ</strong>
+              </div>
+              <div class="calc-divider"></div>
+              <div class="calc-row highlight-calc">
+                <span>បង់ត្រឹមតែ:</span>
+                <strong class="monthly-price">$99.90 / ខែ</strong>
+              </div>
+            </div>
+            <button class="btn btn-primary w-100"
+              onclick="alert('សូមទាក់ទងមកលេខ 012 345 678 ឬ Telegram សម្រាប់ការបង់រំលស់!')">
+              <i class="fa-solid fa-file-signature"></i> ស្នើសុំបង់រំលស់ឥឡូវនេះ
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Shopping Cart Drawer Modal -->
+  <div class="cart-drawer-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-header">
+      <div class="cart-title-wrapper">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <h3>កន្ត្រកទំនិញរបស់អ្នក (<span id="cartTotalItems">0</span>)</h3>
+      </div>
+      <button class="cart-close-btn" id="closeCartBtn" aria-label="បិទកន្ត្រក"><i
+          class="fa-solid fa-xmark"></i></button>
+    </div>
+
+    <div class="cart-body" id="cartBody">
+      <!-- Injected by JS: Items or empty state -->
+    </div>
+
+    <div class="cart-footer" id="cartFooter">
+      <!-- Promo code input -->
+      <div class="promo-box">
+        <input type="text" id="promoInput" placeholder="បញ្ចូលកូដបញ្ចុះតម្លៃ (PHONE10)">
+        <button id="applyPromoBtn" class="btn-promo">ប្រើប្រាស់</button>
+      </div>
+      <div id="promoMessage" class="promo-msg"></div>
+
+      <!-- Pricing Summary -->
+      <div class="cart-summary-breakdown">
+        <div class="summary-line">
+          <span>តម្លៃសរុប (Subtotal):</span>
+          <span id="cartSubtotal">$0.00</span>
+        </div>
+        <div class="summary-line discount-line" id="discountLine" style="display: none;">
+          <span>បញ្ចុះតម្លៃ (Promo):</span>
+          <span id="cartDiscount">-$0.00</span>
+        </div>
+        <div class="summary-line">
+          <span>ថ្លៃដឹកជញ្ជូន (Delivery):</span>
+          <span class="free-text">ឥតគិតថ្លៃ (Free)</span>
+        </div>
+        <div class="summary-line total-line">
+          <span>ទឹកប្រាក់សរុប (Total):</span>
+          <div class="total-values">
+            <span class="total-usd" id="cartTotalUsd">$0.00</span>
+            <small class="total-khr" id="cartTotalKhr">≈ 0 ៛</small>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn btn-primary btn-checkout" id="checkoutBtn">
+        <i class="fa-solid fa-credit-card"></i> <span data-i18n="checkout">បន្តទៅការទូទាត់ (Checkout)</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- Product Quick View / Detail Modal -->
+  <div class="modal-overlay" id="productModalOverlay">
+    <div class="modal-card product-modal" id="productModal">
+      <button class="modal-close-btn" id="closeProductModal"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-product-layout" id="modalProductContent">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Checkout & Multi-Payment / KHQR Modal -->
+  <div class="modal-overlay" id="checkoutModalOverlay">
+    <div class="modal-card checkout-modal" id="checkoutModal">
+      <button class="modal-close-btn" id="closeCheckoutModal" title="បិទ"><i class="fa-solid fa-xmark"></i></button>
+
+      <!-- Checkout Header with 2-Step Indicator -->
+      <div class="checkout-header-wrapper">
+        <div class="checkout-header">
+          <div class="checkout-icon"><i class="fa-solid fa-truck-fast"></i></div>
+          <div class="checkout-header-text">
+            <h3>បំពេញព័ត៌មានដឹកជញ្ជូន & ទូទាត់ប្រាក់</h3>
+            <p>សុវត្ថិភាព 100% · ដឹកជញ្ជូនរហ័សទូទាំង ២៥ ខេត្ត/ក្រុង</p>
+          </div>
+        </div>
+
+        <div class="checkout-steps-bar">
+          <div class="step-badge active" id="stepBadge1">
+            <span class="step-num">1</span>
+            <span class="step-txt"><span class="step-txt-long">ព័ត៌មាន</span>ដឹកជញ្ជូន</span>
+          </div>
+          <div class="step-connector"></div>
+          <div class="step-badge" id="stepBadge2">
+            <span class="step-num">2</span>
+            <span class="step-txt"><span class="step-txt-long">វិធីសាស្រ្ត</span>ទូទាត់</span>
+          </div>
+          <div class="step-connector"></div>
+          <div class="step-badge" id="stepBadge3">
+            <span class="step-num">3</span>
+            <span class="step-txt">ផ្ទៀងផ្ទាត់<span class="step-txt-long"> & បញ្ជាក់</span></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="checkout-grid">
+        <!-- Order Summary Column (Shown at top on Mobile / Right column on Desktop) -->
+        <div class="checkout-summary-col">
+          <div class="summary-header-row">
+            <h4><i class="fa-solid fa-receipt"></i> សង្ខេបទំនិញកុម្ម៉ង់</h4>
+            <span class="summary-items-count" id="checkoutItemCountBadge">0 មុខ</span>
+          </div>
+
+          <div class="mini-order-list" id="miniOrderList">
+            <!-- Injected by JS with images, configs, and pricing -->
+          </div>
+
+          <!-- Checkout Promo Code Box -->
+          <div class="checkout-promo-box" id="checkoutPromoBox">
+            <div class="checkout-promo-header">
+              <label for="checkoutPromoInput">
+                <i class="fa-solid fa-ticket"></i>
+                <span>កូដបញ្ចុះតម្លៃ (Promo Code)</span>
+              </label>
+              <button type="button" class="promo-quick-btn" onclick="quickFillPromo('PHONE10')" title="ចុចដើម្បីបំពេញកូដ PHONE10">
+                <i class="fa-solid fa-fire"></i> PHONE10
+              </button>
+            </div>
+            <div class="checkout-promo-row" id="checkoutPromoRow">
+              <div class="promo-input-wrap">
+                <i class="fa-solid fa-tags"></i>
+                <input type="text" id="checkoutPromoInput" placeholder="បញ្ចូលកូដ (ឧ. PHONE10)" autocomplete="off">
+              </div>
+              <button type="button" class="btn-checkout-promo" id="checkoutPromoBtn" onclick="applyCheckoutPromoCode()">
+                <span>ប្រើប្រាស់</span>
+              </button>
+            </div>
+            <div class="checkout-promo-msg" id="checkoutPromoMsg" style="display: none;"></div>
+          </div>
+
+          <div class="mini-order-totals">
+            <div class="m-row">
+              <span>សរុបទំនិញ:</span>
+              <span id="miniSubtotal">$0.00</span>
+            </div>
+            <div class="m-row" id="miniDiscountRow" style="display:none;">
+              <span><i class="fa-solid fa-tag"></i> បញ្ចុះតម្លៃ (<strong id="miniDiscountPercent">10%</strong>):</span>
+              <span id="miniDiscount" class="text-discount">-$0.00</span>
+            </div>
+            <div class="m-row">
+              <span>ថ្លៃដឹកជញ្ជូន:</span>
+              <span class="text-free"><i class="fa-solid fa-gift"></i> ឥតគិតថ្លៃ (Free)</span>
+            </div>
+            <div class="m-row m-total">
+              <span>សរុបចុងក្រោយ:</span>
+              <div class="final-totals-box">
+                <strong id="miniFinalTotal">$0.00</strong>
+                <span class="final-khr" id="miniFinalTotalKhr">≈ 0 KHR</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Security & Guarantee Badges -->
+          <div class="checkout-trust-box">
+            <div class="trust-item">
+              <i class="fa-solid fa-shield-halved"></i>
+              <div>
+                <strong>ការធានាផ្លូវការ ១ ឆ្នាំ</strong>
+                <small>ទូរស័ព្ទសុទ្ធ 100% ពីក្រុមហ៊ុន</small>
+              </div>
+            </div>
+            <div class="trust-item">
+              <i class="fa-solid fa-truck-fast"></i>
+              <div>
+                <strong>ដឹកជញ្ជូនរហ័សទាន់ចិត្ត</strong>
+                <small>ភ្នំពេញ 1-2 ម៉ោង | ខេត្ត 24 ម៉ោង</small>
+              </div>
+            </div>
+            <div class="trust-item">
+              <i class="fa-solid fa-rotate-left"></i>
+              <div>
+                <strong>ប្តូរទំនិញក្នុង 7 ថ្ងៃ</strong>
+                <small>មានបញ្ហាបច្ចេកទេសប្តូរថ្មីជូនភ្លាម</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Customer Details & Payment Options Form -->
+        <form class="checkout-form" id="checkoutForm" onsubmit="event.preventDefault(); processOrder();">
+          
+          <!-- STEP 1: Customer Info -->
+          <div class="checkout-step-section">
+            <div class="step-title-row">
+              <span class="step-pill">ជំហានទី ១</span>
+              <h4><i class="fa-solid fa-truck-fast"></i> ព័ត៌មានអ្នកទទួល & ទីតាំងដឹកជញ្ជូន</h4>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group" id="groupCustName">
+                <label for="custName"><i class="fa-solid fa-user"></i> ឈ្មោះអ្នកទទួល <span class="required">*</span></label>
+                <div class="input-with-icon">
+                  <input type="text" id="custName" name="custName" required placeholder="ឧទាហរណ៍: សុខ ជា" autocomplete="name" oninput="checkFormValidity()">
+                  <i class="input-status-icon fa-solid fa-check"></i>
+                </div>
+                <small class="field-error-msg" id="errorCustName">សូមបញ្ចូលឈ្មោះអ្នកទទួល (យ៉ាងតិច ២ តួអក្សរ)</small>
+              </div>
+
+              <div class="form-group" id="groupCustPhone">
+                <label for="custPhone"><i class="fa-solid fa-phone"></i> លេខទូរស័ព្ទ <span class="required">*</span></label>
+                <div class="input-with-icon">
+                  <input type="tel" id="custPhone" name="custPhone" required placeholder="ឧទាហរណ៍: 012 345 678" autocomplete="tel" oninput="checkFormValidity()">
+                  <i class="input-status-icon fa-solid fa-check"></i>
+                </div>
+                <small class="field-error-msg" id="errorCustPhone">សូមបញ្ចូលលេខទូរស័ព្ទត្រឹមត្រូវ (ឧ. 012 345 678)</small>
+              </div>
+            </div>
+
+            <div class="form-group" id="groupCustCity">
+              <label for="custCity"><i class="fa-solid fa-map-location-dot"></i> រាជធានី / ខេត្ត <span class="required">*</span></label>
+              <div class="input-with-icon">
+                <select id="custCity" name="custCity" required onchange="checkFormValidity()">
+                  <option value="">-- សូមជ្រើសរើសរាជធានី/ខេត្ត --</option>
+                  <option value="Phnom Penh" selected>រាជធានីភ្នំពេញ (Phnom Penh)</option>
+                  <option value="Kandal">ខេត្តកណ្តាល (Kandal)</option>
+                  <option value="Siem Reap">ខេត្តសៀមរាប (Siem Reap)</option>
+                  <option value="Battambang">ខេត្តបាត់ដំបង (Battambang)</option>
+                  <option value="Preah Sihanouk">ខេត្តព្រះសីហនុ (Sihanoukville)</option>
+                  <option value="Kampong Cham">ខេត្តកំពង់ចាម (Kampong Cham)</option>
+                  <option value="Kampot">ខេត្តកំពត (Kampot)</option>
+                  <option value="Takeo">ខេត្តតាកែវ (Takeo)</option>
+                  <option value="Kampong Thom">ខេត្តកំពង់ធំ (Kampong Thom)</option>
+                  <option value="Banteay Meanchey">ខេត្តបន្ទាយមានជ័យ (Banteay Meanchey)</option>
+                  <option value="Pursat">ខេត្តពោធិ៍សាត់ (Pursat)</option>
+                  <option value="Prey Veng">ខេត្តព្រៃវែង (Prey Veng)</option>
+                  <option value="Svay Rieng">ខេត្តស្វាយរៀង (Svay Rieng)</option>
+                  <option value="Kampong Speu">ខេត្តកំពង់ស្ពឺ (Kampong Speu)</option>
+                  <option value="Kep">ខេត្តកែប (Kep)</option>
+                  <option value="Koh Kong">ខេត្តកោះកុង (Koh Kong)</option>
+                  <option value="Kratie">ខេត្តក្រចេះ (Kratie)</option>
+                  <option value="Mondulkiri">ខេត្តមណ្ឌលគិរី (Mondulkiri)</option>
+                  <option value="Ratanakiri">ខេត្តរតនគិរី (Ratanakiri)</option>
+                  <option value="Stung Treng">ខេត្តស្ទឹងត្រែង (Stung Treng)</option>
+                  <option value="Preah Vihear">ខេត្តព្រះវិហារ (Preah Vihear)</option>
+                  <option value="Oddar Meanchey">ខេត្តឧត្តរមានជ័យ (Oddar Meanchey)</option>
+                  <option value="Pailin">ខេត្តប៉ៃលិន (Pailin)</option>
+                  <option value="Tboung Khmum">ខេត្តត្បូងឃ្មុំ (Tboung Khmum)</option>
+                </select>
+                <i class="input-status-icon fa-solid fa-check"></i>
+              </div>
+            </div>
+
+            <div class="form-group" id="groupCustAddress">
+              <label for="custAddress"><i class="fa-solid fa-house"></i> អាសយដ្ឋានលម្អិត / ផ្ទះលេខ / ផ្លូវ <span class="required">*</span></label>
+              <div class="input-with-icon">
+                <input type="text" id="custAddress" name="custAddress" required placeholder="ឧទាហរណ៍: ផ្ទះលេខ 12 ផ្លូវ 2004 សង្កាត់ទឹកថ្លា ខណ្ឌសែនសុខ..." oninput="checkFormValidity()">
+                <i class="input-status-icon fa-solid fa-check"></i>
+              </div>
+              <small class="field-error-msg" id="errorCustAddress">សូមបញ្ចូលអាសយដ្ឋានលម្អិតសម្រាប់ដឹកជញ្ជូន</small>
+            </div>
+
+            <div class="form-group">
+              <label for="custNotes"><i class="fa-solid fa-note-sticky"></i> ចំណាំបន្ថែម (បើមាន)</label>
+              <input type="text" id="custNotes" name="custNotes" placeholder="ឧទាហរណ៍: ដឹកជញ្ជូនពេលរសៀល ឬទូរស័ព្ទមុនមកដល់...">
+            </div>
+
+            <!-- Form Validation Status Alert -->
+            <div class="form-validation-notice warning" id="formValidationNotice">
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <span>សូមបំពេញ <strong>ឈ្មោះ លេខទូរស័ព្ទ និងអាសយដ្ឋាន</strong> ឱ្យបានពេញលេញ ដើម្បីដំណើរការការទូទាត់ប្រាក់។</span>
+            </div>
+          </div>
+
+          <!-- STEP 2: Payment Selection -->
+          <div class="checkout-step-section">
+            <div class="step-title-row">
+              <span class="step-pill">ជំហានទី ២</span>
+              <h4><i class="fa-solid fa-wallet"></i> ជ្រើសរើសវិធីសាស្រ្តទូទាត់ប្រាក់</h4>
+            </div>
+
+            <div class="payment-methods-grid">
+              <!-- Method 1: KHQR -->
+              <label class="pay-method-card active" onclick="selectPaymentMethod('khqr')">
+                <input type="radio" name="payMethod" value="khqr" checked>
+                <div class="pay-method-inner">
+                  <div class="pay-icon khqr-badge">KHQR</div>
+                  <div class="pay-meta">
+                    <strong>Bakong KHQR (ស្កេនទូទាត់)</strong>
+                    <small>ABA, Wing, ACLEDA, Canadia & គ្រប់ធនាគារ</small>
+                  </div>
+                  <div class="pay-check-circle"><i class="fa-solid fa-check"></i></div>
+                </div>
+              </label>
+
+              <!-- Method 2: COD -->
+              <label class="pay-method-card" onclick="selectPaymentMethod('cod')">
+                <input type="radio" name="payMethod" value="cod">
+                <div class="pay-method-inner">
+                  <div class="pay-icon cod-badge"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                  <div class="pay-meta">
+                    <strong>ទូទាត់ពេលទំនិញមកដល់ (COD)</strong>
+                    <small>ពិនិត្យទំនិញពេញចិត្តរួចចាំទូទាត់លុយ</small>
+                  </div>
+                  <div class="pay-check-circle"><i class="fa-solid fa-check"></i></div>
+                </div>
+              </label>
+
+              <!-- Method 3: Bank Transfer -->
+              <label class="pay-method-card" onclick="selectPaymentMethod('bank')">
+                <input type="radio" name="payMethod" value="bank">
+                <div class="pay-method-inner">
+                  <div class="pay-icon bank-badge"><i class="fa-solid fa-building-columns"></i></div>
+                  <div class="pay-meta">
+                    <strong>ផ្ទេរតាមគណនីធនាគារ (Bank Transfer)</strong>
+                    <small>ABA, Wing, ACLEDA & TrueMoney</small>
+                  </div>
+                  <div class="pay-check-circle"><i class="fa-solid fa-check"></i></div>
+                </div>
+              </label>
+
+              <!-- Method 4: Installment 0% -->
+              <label class="pay-method-card" onclick="selectPaymentMethod('installment')">
+                <input type="radio" name="payMethod" value="installment">
+                <div class="pay-method-inner">
+                  <div class="pay-icon inst-badge"><i class="fa-solid fa-credit-card"></i></div>
+                  <div class="pay-meta">
+                    <strong>បង់រំលស់ការប្រាក់ 0% (Installment)</strong>
+                    <small>បង់រំលស់រហូតដល់ ១២ ខែ គ្មានការប្រាក់</small>
+                  </div>
+                  <div class="pay-check-circle"><i class="fa-solid fa-check"></i></div>
+                </div>
+              </label>
+            </div>
+
+            <!-- PREVIEWS CONTAINER -->
+            <div class="payment-previews-container">
+              
+              <!-- 1. KHQR Authentic Card Preview -->
+              <div class="khqr-preview-box" id="khqrPreviewBox">
+                <div class="khqr-card-ui">
+                  <div class="khqr-card-header">
+                    <div class="khqr-logo-tag">
+                      <span class="khqr-red-badge">KHQR</span>
+                      <span class="bakong-text">Bakong Payment</span>
+                    </div>
+                    <span class="khqr-cur-badge">USD / KHR</span>
+                  </div>
+
+                  <div class="khqr-card-body">
+                    <div class="khqr-merchant-details">
+                      <h4 class="khqr-store-name">PHONEZONE CAMBODIA</h4>
+                      <span class="khqr-store-sub">ហាងទូរស័ព្ទដៃទំនើប និងគ្រឿងបន្លាស់សុទ្ធ</span>
+                      <div class="khqr-amount-showcase">
+                        <span class="amount-label">ទឹកប្រាក់ត្រូវទូទាត់:</span>
+                        <div class="amount-val-usd" id="checkoutKhqrAmount">$0.00</div>
+                        <div class="amount-val-khr" id="checkoutKhqrAmountKhr">≈ 0 KHR</div>
+                      </div>
+                    </div>
+
+                    <!-- Clean Standard QR Display -->
+                    <div class="khqr-code-frame">
+                      <div class="khqr-frame-inner">
+                        <svg viewBox="0 0 100 100" class="khqr-svg-mockup">
+                          <rect width="100" height="100" fill="#ffffff" rx="6" />
+                          <rect x="8" y="8" width="26" height="26" fill="#0f172a" rx="4" />
+                          <rect x="12" y="12" width="18" height="18" fill="#ffffff" rx="2" />
+                          <rect x="16" y="16" width="10" height="10" fill="#e11d48" />
+
+                          <rect x="66" y="8" width="26" height="26" fill="#0f172a" rx="4" />
+                          <rect x="70" y="12" width="18" height="18" fill="#ffffff" rx="2" />
+                          <rect x="74" y="16" width="10" height="10" fill="#e11d48" />
+
+                          <rect x="8" y="66" width="26" height="26" fill="#0f172a" rx="4" />
+                          <rect x="12" y="70" width="18" height="18" fill="#ffffff" rx="2" />
+                          <rect x="16" y="74" width="10" height="10" fill="#e11d48" />
+
+                          <!-- QR Data Dots Pattern -->
+                          <rect x="42" y="10" width="6" height="6" fill="#0f172a" />
+                          <rect x="52" y="14" width="6" height="6" fill="#0f172a" />
+                          <rect x="40" y="24" width="8" height="6" fill="#0f172a" />
+                          <rect x="52" y="26" width="6" height="6" fill="#0f172a" />
+
+                          <rect x="10" y="42" width="6" height="6" fill="#0f172a" />
+                          <rect x="22" y="44" width="6" height="6" fill="#0f172a" />
+                          <rect x="12" y="52" width="6" height="6" fill="#0f172a" />
+                          <rect x="24" y="54" width="6" height="6" fill="#0f172a" />
+
+                          <rect x="70" y="42" width="6" height="6" fill="#0f172a" />
+                          <rect x="82" y="44" width="6" height="6" fill="#0f172a" />
+                          <rect x="70" y="52" width="6" height="6" fill="#0f172a" />
+                          <rect x="80" y="54" width="8" height="6" fill="#0f172a" />
+
+                          <rect x="42" y="66" width="6" height="6" fill="#0f172a" />
+                          <rect x="52" y="70" width="6" height="6" fill="#0f172a" />
+                          <rect x="42" y="80" width="8" height="6" fill="#0f172a" />
+                          <rect x="54" y="80" width="6" height="6" fill="#0f172a" />
+                          <rect x="70" y="70" width="6" height="6" fill="#0f172a" />
+                          <rect x="82" y="76" width="6" height="6" fill="#0f172a" />
+                          <rect x="72" y="84" width="6" height="6" fill="#0f172a" />
+                        </svg>
+                        <div class="khqr-center-emblem">
+                          <i class="fa-solid fa-bolt"></i>
+                        </div>
+                      </div>
+                      <span class="scan-camera-note"><i class="fa-solid fa-camera"></i> ស្កេនជាមួយ App ធនាគារណាមួយក៏បាន</span>
+                    </div>
+                  </div>
+
+                  <!-- QR Footer Info & Timer -->
+                  <div class="khqr-card-footer">
+                    <div class="khqr-account-info">
+                      <span>ABA Account: <strong>001 889 999</strong> (PHONEZONE)</span>
+                      <button type="button" class="btn-copy-tag" onclick="copyText('001889999', 'បានចម្លងលេខគណនី ABA!')">
+                        <i class="fa-regular fa-copy"></i> ចម្លង
+                      </button>
+                    </div>
+                    <div class="khqr-timer-badge">
+                      <i class="fa-solid fa-stopwatch"></i> សុពលភាព: <strong id="qrTimer">14:59</strong>
+                    </div>
+                  </div>
+
+                  <div class="khqr-actions-row">
+                    <button type="button" class="btn btn-outline-sm" onclick="downloadMockQR()">
+                      <i class="fa-solid fa-download"></i> ទាញយករូប QR
+                    </button>
+                    <button type="button" class="btn btn-success-sm" onclick="confirmPaymentStep()">
+                      <i class="fa-solid fa-circle-check"></i> ខ្ញុំបានស្កេនទូទាត់រួចរាល់
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2. COD (Cash on Delivery) Preview -->
+              <div class="cod-preview-box" id="codPreviewBox" style="display: none;">
+                <div class="cod-card-ui">
+                  <div class="cod-icon-header">
+                    <div class="cod-icon-circle"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                    <div>
+                      <h4>ការទូទាត់ប្រាក់ពេលទំនិញមកដល់ដៃ (COD)</h4>
+                      <p>ពិនិត្យទំនិញពេញចិត្ត ទើបប្រគល់ប្រាក់ជូនអ្នកដឹកជញ្ជូន</p>
+                    </div>
+                  </div>
+                  <div class="cod-benefits-grid">
+                    <div class="cod-benefit-item">
+                      <i class="fa-solid fa-box-open"></i>
+                      <span>អនុញ្ញាតឱ្យបើកពិនិត្យទំនិញ និងគ្រឿងបន្លាស់មុនទូទាត់</span>
+                    </div>
+                    <div class="cod-benefit-item">
+                      <i class="fa-solid fa-money-bill-wave"></i>
+                      <span>ទទួលទូទាត់ជាសាច់ប្រាក់សុទ្ធ (USD ឬ KHR)</span>
+                    </div>
+                    <div class="cod-benefit-item">
+                      <i class="fa-solid fa-qrcode"></i>
+                      <span>អាចស្កេន KHQR ផ្ទាល់ជាមួយអ្នកដឹកជញ្ជូនពេលមកដល់</span>
+                    </div>
+                    <div class="cod-benefit-item">
+                      <i class="fa-solid fa-truck-ramp-box"></i>
+                      <span>ដឹកជញ្ជូនឥតគិតថ្លៃ និងរហ័សទាន់ចិត្ត ២៥ ខេត្ត/ក្រុង</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 3. Bank Transfer Preview -->
+              <div class="bank-preview-box" id="bankPreviewBox" style="display: none;">
+                <div class="bank-card-ui">
+                  <div class="bank-header">
+                    <i class="fa-solid fa-building-columns"></i>
+                    <div>
+                      <h4>គណនីធនាគារផ្លូវការរបស់ PhoneZone</h4>
+                      <p>សូមជ្រើសរើសធនាគារណាមួយខាងក្រោមដើម្បីផ្ទេរប្រាក់:</p>
+                    </div>
+                  </div>
+
+                  <div class="bank-accounts-list">
+                    <!-- ABA -->
+                    <div class="bank-acc-item">
+                      <div class="bank-acc-logo aba-bg">ABA</div>
+                      <div class="bank-acc-meta">
+                        <strong class="b-name">ABA Bank</strong>
+                        <span class="b-num">001 889 999 (USD / KHR)</span>
+                        <small class="b-owner">ឈ្មោះ: PHONEZONE CAMBODIA</small>
+                      </div>
+                      <button type="button" class="btn-copy-tag" onclick="copyText('001889999', 'បានចម្លងលេខគណនី ABA!')">
+                        <i class="fa-regular fa-copy"></i> ចម្លង
+                      </button>
+                    </div>
+
+                    <!-- ACLEDA -->
+                    <div class="bank-acc-item">
+                      <div class="bank-acc-logo acleda-bg">ACLEDA</div>
+                      <div class="bank-acc-meta">
+                        <strong class="b-name">ACLEDA Bank</strong>
+                        <span class="b-num">1102 3456 7890 (USD / KHR)</span>
+                        <small class="b-owner">ឈ្មោះ: PHONEZONE CAMBODIA</small>
+                      </div>
+                      <button type="button" class="btn-copy-tag" onclick="copyText('110234567890', 'បានចម្លងលេខគណនី ACLEDA!')">
+                        <i class="fa-regular fa-copy"></i> ចម្លង
+                      </button>
+                    </div>
+
+                    <!-- Wing -->
+                    <div class="bank-acc-item">
+                      <div class="bank-acc-logo wing-bg">WING</div>
+                      <div class="bank-acc-meta">
+                        <strong class="b-name">Wing Bank / TrueMoney</strong>
+                        <span class="b-num">012 345 678 (USD / KHR)</span>
+                        <small class="b-owner">ឈ្មោះ: PHONEZONE CAMBODIA</small>
+                      </div>
+                      <button type="button" class="btn-copy-tag" onclick="copyText('012345678', 'បានចម្លងលេខគណនី Wing!')">
+                        <i class="fa-regular fa-copy"></i> ចម្លង
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Upload Slip Section -->
+                  <div class="slip-upload-box">
+                    <label class="slip-label" for="slipFileInput">
+                      <i class="fa-solid fa-cloud-arrow-up"></i>
+                      <span id="slipStatusText">ភ្ជាប់វិក្កយបត្រ / បង្កាន់ដៃផ្ទេរប្រាក់ (Payment Slip - Optional)</span>
+                    </label>
+                    <input type="file" id="slipFileInput" accept="image/*" onchange="handleSlipSelected(event)">
+                    <div class="slip-preview" id="slipPreviewContainer" style="display:none;">
+                      <img id="slipPreviewImg" src="" alt="Slip">
+                      <button type="button" class="btn-remove-slip" onclick="removeSlip()"><i class="fa-solid fa-trash"></i> លុប</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 4. Installment Preview -->
+              <div class="installment-preview-box" id="installmentPreviewBox" style="display: none;">
+                <div class="inst-card-ui">
+                  <div class="inst-header">
+                    <div class="inst-icon-circle"><i class="fa-solid fa-percent"></i></div>
+                    <div>
+                      <h4>គម្រោងបង់រំលស់ការប្រាក់ 0% (Installment 0%)</h4>
+                      <p>ទទួលបានទូរស័ព្ទប្រើប្រាស់ភ្លាមៗ បង់រំលស់សុទ្ធគ្មានការប្រាក់</p>
+                    </div>
+                  </div>
+
+                  <div class="inst-calc-summary">
+                    <div class="inst-calc-row">
+                      <span>រយៈពេលបង់រំលស់:</span>
+                      <strong>12 ខែ (ការប្រាក់ 0%)</strong>
+                    </div>
+                    <div class="inst-calc-row">
+                      <span>បង់ត្រឹមតែប្រចាំខែ:</span>
+                      <strong class="inst-monthly-val" id="checkoutInstallmentMonthly">$0.00 / ខែ</strong>
+                    </div>
+                  </div>
+
+                  <div class="inst-partners-selection">
+                    <label class="inst-partner-pill active">
+                      <input type="radio" name="instPartner" value="aeon" checked>
+                      <span>AEON Specialized Bank</span>
+                    </label>
+                    <label class="inst-partner-pill">
+                      <input type="radio" name="instPartner" value="creditcard">
+                      <span>Credit Card 0% (ABA / ACLEDA)</span>
+                    </label>
+                    <label class="inst-partner-pill">
+                      <input type="radio" name="instPartner" value="shinhan">
+                      <span>Shinhan Bank</span>
+                    </label>
+                  </div>
+                  <small class="inst-hint"><i class="fa-solid fa-circle-info"></i> បុគ្គលិកផ្នែកបង់រំលស់នឹងទាក់ទងមកលោកអ្នកក្នុងរយៈពេល ១៥ នាទី ដើម្បីរៀបចំឯកសារងាយៗ។</small>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Final Submit Actions -->
+          <div class="checkout-submit-actions">
+            <button type="button" class="btn btn-secondary btn-order-cancel" onclick="closeCheckoutModal()">
+              <i class="fa-solid fa-xmark"></i> <span data-i18n="cancelOrder">បោះបង់ការកុម្ម៉ង់</span>
+            </button>
+            <button type="submit" class="btn btn-primary btn-order-submit" id="btnSubmitOrder">
+              <span class="btn-submit-main">
+                <i class="fa-solid fa-circle-check"></i>
+                <span class="btn-submit-text" data-i18n="confirmAndPay">បញ្ជាក់ការកុម្ម៉ង់ & ទូទាត់</span>
+              </span>
+              <span class="btn-submit-price-badge" id="btnSubmitTotal">$0.00</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Order Success Celebration Modal -->
+  <div class="modal-overlay" id="successModalOverlay">
+    <canvas id="successConfettiCanvas" class="success-confetti-canvas"></canvas>
+
+    <div class="modal-card success-card" id="successCardModal">
+      <!-- Top Close Button -->
+      <button class="modal-close-btn success-close-btn" onclick="closeSuccessModal()" title="បិទ" aria-label="បិទផ្ទាំង">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <!-- Modal Header with Animated Celebration Badge -->
+      <div class="success-modal-header">
+        <div class="success-celebration-badge">
+          <div class="success-ripple-ring ring-1"></div>
+          <div class="success-ripple-ring ring-2"></div>
+          <div class="success-check-circle">
+            <i class="fa-solid fa-check"></i>
+          </div>
+        </div>
+
+        <div class="success-status-pill">
+          <span class="status-pulse-dot"></span>
+          <span>ការកុម្ម៉ង់ត្រូវបានបញ្ជាក់ (Confirmed)</span>
+        </div>
+
+        <h2 class="success-title">ការកុម្ម៉ង់ជោគជ័យ! 🎉</h2>
+        <p class="success-subtitle">
+          អរគុណសម្រាប់ការជឿជាក់លើ <strong>PhoneZone Cambodia</strong>
+          <span class="success-subtext">យើងខ្ញុំបានទទួលការកុម្ម៉ង់ និងកំពុងរៀបចំដឹកជញ្ជូនជូនលោកអ្នកយ៉ាងរហ័ស។</span>
+        </p>
+      </div>
+
+      <!-- Scrollable Receipt Body -->
+      <div class="success-receipt-scroll-container">
+        <div class="order-receipt-box" id="orderReceiptBox">
+          <!-- Rendered dynamically -->
+        </div>
+      </div>
+
+      <!-- Action Buttons Bar -->
+      <div class="success-actions">
+        <button class="btn btn-primary btn-success-continue" onclick="closeSuccessModal()">
+          <i class="fa-solid fa-bag-shopping"></i> បន្តទិញទំនិញ
+        </button>
+        <button class="btn btn-secondary btn-success-print" onclick="printReceipt()">
+          <i class="fa-solid fa-print"></i> បោះពុម្ពវិក្កយបត្រ
+        </button>
+        <button class="btn btn-secondary btn-success-copy" onclick="copyOrderDetails()" id="btnCopyOrderDetails" title="ចម្លងព័ត៌មានវិក្កយបត្រទាំងអស់">
+          <i class="fa-regular fa-clipboard"></i> <span id="btnCopyOrderText">ចម្លងវិក្កយបត្រ</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col brand-col">
+        <div class="brand-logo footer-logo">
+          <div class="logo-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+          <div class="brand-text">
+            <span class="brand-name">Phone<span class="highlight">Zone</span></span>
+            <span class="brand-subtitle">ហាងទូរស័ព្ទដៃទំនើប</span>
+          </div>
+        </div>
+        <p class="footer-desc">
+          ជាហាងលក់ទូរស័ព្ទដៃស្មាតហ្វូន និងគ្រឿងបន្លាស់សុទ្ធ 100% ឈានមុខគេក្នុងប្រទេសកម្ពុជា ផ្តល់ជូនតម្លៃល្អបំផុត
+          សេវាកម្មរហ័សទាន់ចិត្ត និងការធានាផ្លូវការ។
+        </p>
+        <div class="social-links">
+          <a href="#" class="social-btn" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+          <a href="#" class="social-btn" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-btn" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#" class="social-btn" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">ម៉ាកល្បីៗ</h4>
+        <ul class="footer-links">
+          <li><a href="#catalogSection" onclick="filterByCategory('apple')">Apple iPhone</a></li>
+          <li><a href="#catalogSection" onclick="filterByCategory('samsung')">Samsung Galaxy</a></li>
+          <li><a href="#catalogSection" onclick="filterByCategory('xiaomi')">Xiaomi Series</a></li>
+          <li><a href="#catalogSection" onclick="filterByCategory('foldable')">Foldable Phones</a></li>
+          <li><a href="#catalogSection" onclick="filterByCategory('accessories')">គ្រឿងបន្លាស់ Original</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">សេវាកម្ម & ការធានា</h4>
+        <ul class="footer-links">
+          <li><a href="#">គោលការណ៍ធានា 1 ឆ្នាំ</a></li>
+          <li><a href="#">សេវាកម្មដឹកជញ្ជូន 25 ខេត្ត</a></li>
+          <li><a href="#">លក្ខខណ្ឌបង់រំលស់ 0%</a></li>
+          <li><a href="#">ការប្តូរទំនិញក្នុង 7 ថ្ងៃ</a></li>
+          <li><a href="#">វិធីសាស្រ្តទូទាត់ KHQR</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">ព័ត៌មានទំនាក់ទំនង</h4>
+        <ul class="footer-contact">
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            <span>មហាវិថីព្រះមុនីវង្ស (Monivong Blvd), សង្កាត់បឹងកេងកង, រាជធានីភ្នំពេញ</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            <span>012 345 678 / 098 765 432</span>
+          </li>
+          <li>
+            <i class="fa-brands fa-telegram"></i>
+            <span>@phonezone_cambodia</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-clock"></i>
+            <span>បើកបម្រើសេវា: 8:00 AM - 8:30 PM (រាល់ថ្ងៃ)</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom-container">
+        <p>&copy; 2024-2026 PhoneZone Cambodia. រក្សាសិទ្ធិគ្រប់យ៉ាង។ រៀបចំឡើងដោយបច្ចេកវិទ្យាទំនើប។</p>
+        <div class="payment-partners">
+          <span class="partner-pill">KHQR</span>
+          <span class="partner-pill">ABA PAY</span>
+          <span class="partner-pill">ACLEDA</span>
+          <span class="partner-pill">WING</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="translations.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
